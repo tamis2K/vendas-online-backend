@@ -21,7 +21,7 @@ export class CityService {
       }),
     );
   }
-  async findCityByID(cityId: number): Promise<CityEntity> {
+  async findCityById(cityId: number): Promise<CityEntity> {
     const city = await this.cityRepository.findOne({
       where: {
         id: cityId,
